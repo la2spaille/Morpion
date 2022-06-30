@@ -14,7 +14,6 @@
         <LinearLayout
 
                 android:gravity="center"
-                android:background="#1f3540"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
         >
