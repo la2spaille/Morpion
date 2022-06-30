@@ -43,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
     public void init(Button[] plateau) {
         players = initPlayer("Wilfried", "Trash");
         turn.setBackground(players[p].turn);
+for (Button button : plateau) {
+            
+                button.setBackgroundColor(Color.parseColor("#fff"));
+                button.setClickable(true);
+        }
         turn(plateau);
 
     }
