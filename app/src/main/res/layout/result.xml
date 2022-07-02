@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+
+>
+    <LinearLayout
+            android:layout_height="228dp"
+            android:layout_width="match_parent"
+            android:background="#1f3641"
+            android:orientation="vertical"
+            android:gravity="center"
+
+    >
+        <TextView
+                android:text="It's a win!"
+                android:textColor="@color/grey"
+                android:letterSpacing="0.08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/outfit_bold"
+                android:id="@+id/title"
+
+        />
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#1f3641"
+                android:gravity="center"
+
+
+        >
+            <View
+                    android:background="@drawable/x"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/symbol"
+
+            />
+            <TextView
+                    android:layout_marginLeft="8dp"
+                    android:text="TAKES THE ROUND"
+                    app:fontFamily="@font/outfit_bold"
+                    android:textColor="@color/blue"
+                    android:letterSpacing="0.08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:textSize="22dp"
+                    android:layout_marginBottom="24dp"
+                    android:id="@+id/description"
+
+            />
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+        >
+            <Button
+                    android:letterSpacing="0.08"
+                    android:textSize="16dp"
+                    app:fontFamily="@font/outfit_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:id="@+id/noBtn"
+                    android:text="Quit"
+                    android:textColor="#192A32"
+                    android:background="@color/grey"
+            />
+
+            <Button
+                    android:letterSpacing="0.08"
+                    android:textSize="16dp"
+                    app:fontFamily="@font/outfit_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:id="@+id/yesBtn"
+                    android:text="Next Round"
+                    android:textColor="#192A32"
+                    android:background="@color/yellow"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

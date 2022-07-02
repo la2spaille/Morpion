@@ -3,15 +3,17 @@ package com.iuc.morpion;
 import android.graphics.drawable.Drawable;
 
 public class Player {
-    public String name;
     public Drawable symbol;
-    public Drawable outline;
+    public Drawable dark;
     public Drawable turn;
-    public Player (String name, Drawable symbol,Drawable outline, Drawable turn) {
-        this.name = name;
+    public int win;
+    public String color;
+    public Player ( Drawable symbol,Drawable dark, Drawable turn,String color) {
         this.symbol = symbol;
-        this.outline = outline;
+        this.dark =  dark;
         this.turn = turn;
+        this.color = color;
+        this.win =0;
     }
 
 }
