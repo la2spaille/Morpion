@@ -11,15 +11,27 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
     private MainActivity activity;
+    static int p;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         activity = this;
     }
-    public void two_player(View view) {
+    public void setPlayerOneMark() {
+
+    }
+    public void one_player(View view) {
+        p = 0;
         Intent intent = new Intent(this, PlayActivity.class);
         startActivity(intent);
+        finish();
+    }
+    public void two_player(View view) {
+        p = 0;
+        Intent intent = new Intent(this, PlayActivity.class);
+        startActivity(intent);
+        finish();
     }
     public void online(View view) {
         OnlineDialog coming_soon =  new OnlineDialog(activity);

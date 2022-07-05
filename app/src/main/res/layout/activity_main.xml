@@ -42,7 +42,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:fontFamily="@font/outfit_bold"
-
         />
         <LinearLayout
                 android:layout_width="match_parent"
@@ -62,12 +61,14 @@
                     android:paddingBottom="11dp"
                     android:paddingTop="11dp"
                     android:paddingRight="49dp"
+                    android:id="@+id/x_choice"
+
             >
-                <Button
+                <View
                         android:layout_width="31.5dp"
                         android:layout_height="31.5dp"
                         android:background="@drawable/x_grey"
-                        android:id="@+id/x_choice"
+
                 />
 
             </RelativeLayout>
@@ -78,12 +79,13 @@
                     android:paddingBottom="11dp"
                     android:paddingTop="11dp"
                     android:paddingRight="49dp"
+                    android:id="@+id/o_choice"
+
             >
-                <Button
+                <View
                         android:layout_width="31.5dp"
                         android:layout_height="31.5dp"
                         android:background="@drawable/o_outline"
-                        android:id="@+id/o_choice"
                 />
 
             </RelativeLayout>
@@ -108,34 +110,34 @@
     >
         <Button
                 android:letterSpacing="0.08"
-
-                android:textSize="16dp"
+                android:textSize="16sp"
                 app:fontFamily="@font/outfit_bold"
                 android:layout_width="325dp"
                 android:layout_height="67dp"
-                android:text="1  player (bêta)"
+                android:text="1  player (beta)"
                 android:textColor="#192A32"
                 android:background="@color/yellow"
-                android:onClick="online"
+                android:onClick="one_player"
+
         />
         <Button
                 android:layout_marginTop="20dp"
                 android:letterSpacing="0.08"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 app:fontFamily="@font/outfit_bold"
                 android:layout_width="325dp"
                 android:layout_height="67dp"
                 android:text="2  players"
                 android:textColor="#192A32"
                 android:background="@color/blue"
-                android:id="@+id/two_player"
                 android:onClick="two_player"
+
 
         />
         <Button
                 android:letterSpacing="0.08"
                 android:layout_marginTop="20dp"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 app:fontFamily="@font/outfit_bold"
                 android:layout_width="325dp"
                 android:layout_height="67dp"
@@ -143,6 +145,7 @@
                 android:textColor="#192A32"
                 android:background="@color/grey"
                 android:onClick="online"
+
 
         />
     </LinearLayout>

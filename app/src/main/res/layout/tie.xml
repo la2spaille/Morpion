@@ -15,47 +15,19 @@
             android:gravity="center"
 
     >
-        <TextView
-                android:text="It's a win! 🎉"
-                android:textColor="@color/grey"
-                android:letterSpacing="0.08"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:fontFamily="@font/outfit_bold"
-                android:id="@+id/title"
 
-        />
-        <LinearLayout
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="#1f3641"
-                android:gravity="center"
-
-
-        >
-            <View
-                    android:background="@drawable/x"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:id="@+id/symbol"
-
-            />
             <TextView
                     android:layout_marginLeft="8dp"
-                    android:text="TAKES THE ROUND"
+                    android:text="ROUND TIED"
                     app:fontFamily="@font/outfit_bold"
-                    android:textColor="@color/blue"
+                    android:textColor="@color/grey"
                     android:letterSpacing="0.08"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
                     android:textSize="22dp"
-                    android:layout_marginBottom="24dp"
-                    android:id="@+id/description"
+                    android:layout_marginBottom="27dp"
 
             />
-
-        </LinearLayout>
         <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"

@@ -80,12 +80,29 @@
                 />
                 <TextView
                         android:layout_marginLeft="9dp"
-                        android:text="3.0s"
+                        android:text="3"
+                        android:textColor="#A8BFC9"
+                        android:letterSpacing="0.08"
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/timer"
+                        app:fontFamily="@font/outfit_bold"
+                        android:textSize="20dp"
+                />
+                <TextView
+                        android:text=".0"
+                        android:textColor="#A8BFC9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fontFamily="@font/outfit_bold"
+                        android:textSize="20dp"
+                />
+                <TextView
+                        android:text="s"
                         android:textColor="#A8BFC9"
                         android:letterSpacing="0.08"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/timer"
                         app:fontFamily="@font/outfit_bold"
                         android:textSize="20dp"
 
@@ -339,13 +356,13 @@
             />
             <TextView
                     android:text="0"
-
                     android:textColor="@color/bg"
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    app:fontFamily="@font/outfit_bold"/>
+                    app:fontFamily="@font/outfit_bold"
+                    android:id="@+id/x_score"
+            />
             />
         </LinearLayout>
         <LinearLayout
@@ -361,7 +378,6 @@
         >
             <TextView
                     android:letterSpacing="0.08"
-                    android:id="@+id/o_score"
                     android:text="TIES"
                     android:textColor="@color/bg"
 
@@ -373,10 +389,10 @@
             <TextView
                     android:text="0"
                     android:textColor="@color/bg"
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
+                    android:id="@+id/ties"
                     app:fontFamily="@font/outfit_bold"/>
             />
         </LinearLayout>
@@ -396,10 +412,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:fontFamily="@font/outfit"
-                    android:id="@+id/x_score"
 
             />
             <TextView
+                    android:id="@+id/o_score"
                     android:text="0"
                     android:textColor="@color/bg"
                     android:layout_width="wrap_content"

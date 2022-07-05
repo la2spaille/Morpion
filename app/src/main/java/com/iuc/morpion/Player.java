@@ -13,7 +13,7 @@ public class Player {
         this.dark =  dark;
         this.turn = turn;
         this.color = color;
-        this.win =0;
+        this.win = 0;
     }
 
 }

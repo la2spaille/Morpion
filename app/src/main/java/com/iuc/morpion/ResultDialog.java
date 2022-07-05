@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class ResultDialog extends Dialog {
-    private String title, color;
+    private String title, color,description;
     private Drawable symbol;
     private TextView descriptionView, titleView;
     private View symbolView;
@@ -23,9 +23,12 @@ public class ResultDialog extends Dialog {
         this.yesBtn = findViewById(R.id.yesBtn);
         this.noBtn = findViewById(R.id.noBtn);
         this.title = "It's a win!";
+        this.description = "TAKE THE ROUND";
         this.descriptionView = findViewById(R.id.description);
         this.titleView = findViewById(R.id.title);
         this.symbolView = findViewById(R.id.symbol);
+        setCancelable(false);
+        setCanceledOnTouchOutside(false);
     }
 
     public void setTitle(String title) {
@@ -52,6 +55,7 @@ public class ResultDialog extends Dialog {
         show();
         titleView.setText(title);
         descriptionView.setTextColor(Color.parseColor(color));
+        descriptionView.setText(description);
         symbolView.setBackground(symbol);
     }
 }
